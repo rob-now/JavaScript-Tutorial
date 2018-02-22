@@ -16,6 +16,36 @@
 <a href="#">Link 5</a>
 <a href="#">Link 6</a>
 
+<div id="first-list">
+    <ul>
+        <li><a href="#">First</a></li>
+        <li><a href="#">Second</a></li>
+        <li><a href="#">Third</a></li>
+    </ul>
+
+</div>
+
+<div id="second-list">
+    <ul id="myList3">
+        <li>Water 2</li>
+        <li>Milk 2</li>
+    </ul>
+</div>
+
+<ul id="myList1"><li>Coffee</li><li>Tea</li></ul>
+<ul id="myList2"><li>Water</li><li>Milk</li></ul>
+
+<p>Click the button to move an item from one list to another.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+    function myFunction() {
+        var node = document.getElementById("myList2").lastChild;
+        document.getElementById("myList1").appendChild(node);
+    }
+</script>
+
 <script src="script.js"></script>
 
 </body>
