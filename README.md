@@ -1,2 +1,2 @@
-# JavaScript-Tutorial
+# README
 JavaScript Tutorial from The Net Ninja
