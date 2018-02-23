@@ -1,0 +1,30 @@
+body {
+    background: #eee;
+    padding-bottom: 8em;
+}
+
+#message {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    background: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 1.2em 1em;
+    text-align: center;
+    border: 1px solid #ff7777;
+    opacity: 0;
+
+    /* Transition setup */
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
+
+#message.show {
+    opacity: 1;
+
+    /* Transition setup */
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
