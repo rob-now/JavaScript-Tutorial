@@ -1,0 +1,52 @@
+body {
+    background: #eee;
+    padding-bottom: 8em;
+}
+
+#content > h3 {
+    display: block;
+    text-align: center;
+}
+
+#content {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    background: #fff;
+    width: 500px;
+    margin: 0 auto;
+    padding: 1.2em 1em;
+    text-align: justify;
+
+    /* Max height, rest (overflow) is hidden */
+    max-height: 245px;
+    overflow: hidden;
+
+    /* Transition setup */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#content.open {
+    max-height: 800px;
+
+    /* Transition setup */
+    -webkit-transition: max-height 0.7s;
+    -moz-transition: max-height 0.7s;
+    transition: max-height 0.7s;
+}
+
+#show-more {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display: block;
+    width: 125px;
+    text-align: center;
+    margin: 1em auto;
+    background: #456;
+    color: #fff;
+    padding: 0.4em;
+    cursor: pointer;
+}
+
